@@ -152,69 +152,32 @@ console.log("");
 //Ele vai executar após as outras atividades, pois enquanto há um intervalo nesta ação, não há nas demais
 //--------------------------------------------------------
 //15.Crie uma função que encontre o número 27.
-function procurando(resposta){
-    for (let a = 0; a <= resposta; a++) {
-
-        if (a === 27) {
-            console.log("Encontrei o 27"); ///Não funciona!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+function encontrar(procurar){
+    for (let a = 0; a <= procurar; a++){
+        if (a === 27){
+            console.log("Encontrei o 27");
         } else {
-            console.log("Não encontrei...");
+            console.log("Não encontrei o 27");
         }
-        return;
     }
+    return "";
 }
-console.log(procurando(27))
-console.log("");
+console.log(encontrar(27));
 //-------------------------------------------------------
 // //16.Crie uma função que some números pares até um limite.
-// function parII(val){
-//     let listaII = [];
-//     for(let i=1; i <= val; i++){
-//         if (i%2 == 0){
-//             listaII.push(i)
-//             listaII[0] = listaII[0] + listaII[1]
-//             listaII.pop();
-//         }
-        
-//     }
-//     return listaII[0];
-// }
-// console.log(parII(6));
-// console.log(""); ///Com problema
+function somarnum (maximo){
+    let calculo = 0;
 
-
-function parSoma (total) {
-    let uniao = 0;
-    for(let z = 0; z <= total; z++) {
-
-        if(z% 2===0){
-            uniao += z;
+    for (let b = 0; b <= maximo; b++){
+        if(b%2 === 0){
+            calculo += b;
         }
     }
-    return uniao;
+    return calculo;
 }
-console.log(parSoma(10));
-console.log()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(somarnum(6));
+console.log("")
 //--------------------------------------------------------
 //17.Crie uma função que conte números ímpares.  
 function impar(numIV){
